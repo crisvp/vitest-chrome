@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["es2017", "dom", "esnext.array"],
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "allowJs": true,
+    "checkJs": true
+  },
+  "exclude": ["lib", "playground", "tests"],
+  "typeAcquisition": {
+    "enable": true
+  },
+  "types": [
+    "./auto-imports.d.ts"  
+  ]
+}

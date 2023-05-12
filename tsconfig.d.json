@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true,
+  },
+  "include": ["src", "./auto-imports.d.ts"],
+  "exclude": [
+    "**/*.test.ts",
+    "lib",
+    "node_modules",
+    "playground"
+  ]
+}

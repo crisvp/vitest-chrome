@@ -1,0 +1,68 @@
+{
+  "name": "vitest-chrome",
+  "version": "0.1.0",
+  "description": "Test Chrome extensions with Vitest. A complete mock of the Chrome API.",
+  "keywords": [
+    "api",
+    "chrome",
+    "chromium",
+    "extension",
+    "vitest",
+    "mock",
+    "test",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "lib",
+    "types",
+    "vitest-chrome-schema.json",
+    "vitest-chrome.d.ts"
+  ],
+  "scripts": {
+    "build": "run-s build:clean build:pro build:types build:copy",
+    "build:clean": "rm -rf lib types",
+    "build:copy": "copyfiles -f src/vitest-chrome.d.ts types",
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build:pro": "rollup -c --environment NODE_ENV:production",
+    "build:types": "tsc -p tsconfig.d.json",
+    "build:watch": "pnpm run build:dev -- -w",
+    "postpublish": "rm -rf node_modules package-lock.json && pnpm i",
+    "start": "run-p build:watch",
+    "pretest": "pnpm run build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.114",
+    "vitest": "^0.31.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-typescript": "^4.1.2",
+    "@types/filesystem": "^0.0.29",
+    "@types/fs-extra": "^9.0.13",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^14.18.46",
+    "@types/power-assert": "^1.5.8",
+    "@types/puppeteer": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "chrome-promise": "^3.0.5",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.32.0",
+    "fs-extra": "^9.1.0",
+    "jsdom": "^22.0.0",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
+    "rollup": "^2.79.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
+    "unplugin-auto-import": "^0.15.3"
+  }
+}
