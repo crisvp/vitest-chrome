@@ -1,1 +1,4 @@
 # playground/
+lib/
+types/
+pnpm-lock.yaml
