@@ -1,6 +1,6 @@
 {
   "name": "vitest-chrome",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Test Chrome extensions with Vitest. A complete mock of the Chrome API.",
   "keywords": [
     "api",
@@ -13,21 +13,22 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.esm.js",
+  "main": "lib/index.es.js",
+  "module": "lib/index.es.js",
   "types": "types/index.d.ts",
   "files": [
     "lib",
     "types",
     "vitest-chrome-schema.json",
-    "vitest-chrome.d.ts"
+    "vitest-chrome.d.ts",
+    "auto-imports.d.ts"
   ],
   "scripts": {
     "build": "run-s build:clean build:pro build:types build:copy",
     "build:clean": "rm -rf lib types",
     "build:copy": "copyfiles -f src/vitest-chrome.d.ts types",
-    "build:dev": "rollup -c --environment NODE_ENV:development",
-    "build:pro": "rollup -c --environment NODE_ENV:production",
+    "build:dev": "pnpm vite build -m development",
+    "build:pro": "pnpm vite build -m production",
     "build:types": "tsc -p tsconfig.d.json",
     "build:watch": "pnpm run build:dev -- -w",
     "postpublish": "rm -rf node_modules package-lock.json && pnpm i",
@@ -37,6 +38,8 @@
   },
   "dependencies": {
     "@types/chrome": "^0.0.114",
+    "util": "^0.12.5",
+    "vite": "^4.3.5",
     "vitest": "^0.31.0"
   },
   "devDependencies": {

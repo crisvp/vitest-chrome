@@ -20,7 +20,5 @@
   "typeAcquisition": {
     "enable": true
   },
-  "types": [
-    "./auto-imports.d.ts"  
-  ]
+  "types": ["./auto-imports.d.ts"]
 }

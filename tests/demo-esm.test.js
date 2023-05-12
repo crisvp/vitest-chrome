@@ -1,5 +1,5 @@
 import { test, expect, vi } from 'vitest'
-import { chrome } from '../lib/index.esm'
+import { chrome } from '../lib/index.es'
 
 test('chrome api events', () => {
   const listenerSpy = vi.fn()

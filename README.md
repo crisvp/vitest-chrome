@@ -1,8 +1,7 @@
 # `vitest-chrome`
 
-This is a quick & dirty hack to basically get jest-chrome
-working with vite. Use at someone else's risk.
-
+This is a quick & dirty hack to basically get jest-chrome working
+with vite. Use at someone else's risk.
 
 ## Original README
 

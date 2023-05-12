@@ -482,7 +482,9 @@ export namespace Bookmarks {
    *
    * function(array of BookmarkTreeNode results) {...};
    */
-  export const getRecent: vi.Mock<typeof chrome.bookmarks.getRecent>
+  export const getRecent: vi.Mock<
+    typeof chrome.bookmarks.getRecent
+  >
   /**
    * Retrieves the specified BookmarkTreeNode.
    *
@@ -533,7 +535,9 @@ export namespace Bookmarks {
    *
    * function(array of BookmarkTreeNode results) {...};
    */
-  export const getChildren: vi.Mock<typeof chrome.bookmarks.getChildren>
+  export const getChildren: vi.Mock<
+    typeof chrome.bookmarks.getChildren
+  >
   /**
    * Since Chrome 14.
    *
@@ -545,7 +549,9 @@ export namespace Bookmarks {
    *
    * function(array of BookmarkTreeNode results) {...};
    */
-  export const getSubTree: vi.Mock<typeof chrome.bookmarks.getSubTree>
+  export const getSubTree: vi.Mock<
+    typeof chrome.bookmarks.getSubTree
+  >
   /**
    * Recursively removes a bookmark folder.
    *
@@ -553,7 +559,9 @@ export namespace Bookmarks {
    *
    * function() {...};
    */
-  export const removeTree: vi.Mock<typeof chrome.bookmarks.removeTree>
+  export const removeTree: vi.Mock<
+    typeof chrome.bookmarks.removeTree
+  >
 
   /** Fired when a bookmark or folder is removed. When a folder is removed recursively, a single notification is fired for the folder, and none for its contents. */
   export const onRemoved: BookmarkRemovedEvent
@@ -640,25 +648,33 @@ export namespace BrowserAction {
    *
    * @param callback Supported since Chrome 67
    */
-  export const enable: vi.Mock<typeof chrome.browserAction.enable>
+  export const enable: vi.Mock<
+    typeof chrome.browserAction.enable
+  >
   /**
    * Sets the background color for the badge.
    *
    * @param callback Supported since Chrome 67
    */
-  export const setBadgeBackgroundColor: vi.Mock<typeof chrome.browserAction.setBadgeBackgroundColor>
+  export const setBadgeBackgroundColor: vi.Mock<
+    typeof chrome.browserAction.setBadgeBackgroundColor
+  >
   /**
    * Sets the badge text for the browser action. The badge is displayed on top of the icon.
    *
    * @param callback Supported since Chrome 67
    */
-  export const setBadgeText: vi.Mock<typeof chrome.browserAction.setBadgeText>
+  export const setBadgeText: vi.Mock<
+    typeof chrome.browserAction.setBadgeText
+  >
   /**
    * Sets the title of the browser action. This shows up in the tooltip.
    *
    * @param callback Supported since Chrome 67
    */
-  export const setTitle: vi.Mock<typeof chrome.browserAction.setTitle>
+  export const setTitle: vi.Mock<
+    typeof chrome.browserAction.setTitle
+  >
   /**
    * Since Chrome 19.
    *
@@ -666,14 +682,18 @@ export namespace BrowserAction {
    *
    * @param callback Supported since Chrome 67
    */
-  export const getBadgeText: vi.Mock<typeof chrome.browserAction.getBadgeText>
+  export const getBadgeText: vi.Mock<
+    typeof chrome.browserAction.getBadgeText
+  >
   /**
    * Sets the html document to be opened as a popup when the user clicks on the browser action's icon.
    *
    * @param callback Supported since Chrome 67
    */
 
-  export const setPopup: vi.Mock<typeof chrome.browserAction.setPopup>
+  export const setPopup: vi.Mock<
+    typeof chrome.browserAction.setPopup
+  >
   /**
    * Since Chrome 22.
    *
@@ -683,7 +703,9 @@ export namespace BrowserAction {
    *
    * @param callback Supported since Chrome 67
    */
-  export const disable: vi.Mock<typeof chrome.browserAction.disable>
+  export const disable: vi.Mock<
+    typeof chrome.browserAction.disable
+  >
   /**
    * Since Chrome 19.
    *
@@ -693,7 +715,9 @@ export namespace BrowserAction {
    *
    * function(string result) {...};
    */
-  export const getTitle: vi.Mock<typeof chrome.browserAction.getTitle>
+  export const getTitle: vi.Mock<
+    typeof chrome.browserAction.getTitle
+  >
   /**
    * Since Chrome 19.
    *
@@ -703,7 +727,9 @@ export namespace BrowserAction {
    *
    * function( ColorArray result) {...};
    */
-  export const getBadgeBackgroundColor: vi.Mock<typeof chrome.browserAction.getBadgeBackgroundColor>
+  export const getBadgeBackgroundColor: vi.Mock<
+    typeof chrome.browserAction.getBadgeBackgroundColor
+  >
   /**
    * Since Chrome 19.
    *
@@ -713,7 +739,9 @@ export namespace BrowserAction {
    *
    * function(string result) {...};
    */
-  export const getPopup: vi.Mock<typeof chrome.browserAction.getPopup>
+  export const getPopup: vi.Mock<
+    typeof chrome.browserAction.getPopup
+  >
   /**
    * Sets the icon for the browser action. The icon can be specified either as the path to an image file or as the pixel data from a canvas element, or as dictionary of either one of those. Either the path or the imageData property must be specified.
    *
@@ -721,7 +749,9 @@ export namespace BrowserAction {
    *
    * function() {...};
    */
-  export const setIcon: vi.Mock<typeof chrome.browserAction.setIcon>
+  export const setIcon: vi.Mock<
+    typeof chrome.browserAction.setIcon
+  >
 
   /**  Fired when a browser action icon is clicked. This event will not fire if the browser action has a popup. */
   export const onClicked: BrowserClickedEvent
@@ -820,7 +850,9 @@ export namespace BrowsingData {
    *
    * function(object result) {...};
    */
-  export const settings: vi.Mock<typeof chrome.browsingData.settings>
+  export const settings: vi.Mock<
+    typeof chrome.browsingData.settings
+  >
   /**
    * Clears plugins' data.
    *
@@ -830,7 +862,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removePluginData: vi.Mock<typeof chrome.browsingData.removePluginData>
+  export const removePluginData: vi.Mock<
+    typeof chrome.browsingData.removePluginData
+  >
   /**
    * Clears the browser's stored form data (autofill).
    *
@@ -840,7 +874,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeFormData: vi.Mock<typeof chrome.browsingData.removeFormData>
+  export const removeFormData: vi.Mock<
+    typeof chrome.browsingData.removeFormData
+  >
   /**
    * Clears websites' file system data.
    *
@@ -850,7 +886,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeFileSystems: vi.Mock<typeof chrome.browsingData.removeFileSystems>
+  export const removeFileSystems: vi.Mock<
+    typeof chrome.browsingData.removeFileSystems
+  >
   /**
    * Clears various types of browsing data stored in a user's profile.
    *
@@ -872,7 +910,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removePasswords: vi.Mock<typeof chrome.browsingData.removePasswords>
+  export const removePasswords: vi.Mock<
+    typeof chrome.browsingData.removePasswords
+  >
   /**
    * Clears the browser's cookies and server-bound certificates modified within a particular timeframe.
    *
@@ -882,7 +922,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeCookies: vi.Mock<typeof chrome.browsingData.removeCookies>
+  export const removeCookies: vi.Mock<
+    typeof chrome.browsingData.removeCookies
+  >
   /**
    * Clears websites' WebSQL data.
    *
@@ -892,7 +934,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeWebSQL: vi.Mock<typeof chrome.browsingData.removeWebSQL>
+  export const removeWebSQL: vi.Mock<
+    typeof chrome.browsingData.removeWebSQL
+  >
   /**
    * Clears websites' appcache data.
    *
@@ -902,7 +946,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeAppcache: vi.Mock<typeof chrome.browsingData.removeAppcache>
+  export const removeAppcache: vi.Mock<
+    typeof chrome.browsingData.removeAppcache
+  >
   /**
    * Clears the browser's list of downloaded files (not the downloaded files themselves).
    *
@@ -912,7 +958,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeDownloads: vi.Mock<typeof chrome.browsingData.removeDownloads>
+  export const removeDownloads: vi.Mock<
+    typeof chrome.browsingData.removeDownloads
+  >
   /**
    * Clears websites' local storage data.
    *
@@ -922,7 +970,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeLocalStorage: vi.Mock<typeof chrome.browsingData.removeLocalStorage>
+  export const removeLocalStorage: vi.Mock<
+    typeof chrome.browsingData.removeLocalStorage
+  >
   /**
    * Clears the browser's cache.
    *
@@ -932,7 +982,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeCache: vi.Mock<typeof chrome.browsingData.removeCache>
+  export const removeCache: vi.Mock<
+    typeof chrome.browsingData.removeCache
+  >
   /**
    * Clears the browser's history.
    *
@@ -942,7 +994,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeHistory: vi.Mock<typeof chrome.browsingData.removeHistory>
+  export const removeHistory: vi.Mock<
+    typeof chrome.browsingData.removeHistory
+  >
   /**
    * Clears websites' IndexedDB data.
    *
@@ -952,7 +1006,9 @@ export namespace BrowsingData {
    *
    * function() {...};
    */
-  export const removeIndexedDB: vi.Mock<typeof chrome.browsingData.removeIndexedDB>
+  export const removeIndexedDB: vi.Mock<
+    typeof chrome.browsingData.removeIndexedDB
+  >
 }
 
 ////////////////////
@@ -1628,7 +1684,9 @@ export namespace ContextMenus {
    *
    * function() {...};
    */
-  export const removeAll: vi.Mock<typeof chrome.contextMenus.removeAll>
+  export const removeAll: vi.Mock<
+    typeof chrome.contextMenus.removeAll
+  >
   /**
    * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the creation callback fires (the details will be in JestChrome.runtime.lastError).
    *
@@ -1789,7 +1847,9 @@ export namespace Cookies {
    *
    * Parameter cookieStores: All the existing cookie stores.
    */
-  export const getAllCookieStores: vi.Mock<typeof chrome.cookies.getAllCookieStores>
+  export const getAllCookieStores: vi.Mock<
+    typeof chrome.cookies.getAllCookieStores
+  >
   /**
    * Retrieves all cookies from a single cookie store that match the given information. The cookies returned will be sorted, with those with the longest path first. If multiple cookies have the same path length, those with the earliest creation time will be first.
    *
@@ -1967,7 +2027,9 @@ export namespace Debugger {
    *
    * function(object result) {...};
    */
-  export const sendCommand: vi.Mock<typeof chrome.debugger.sendCommand>
+  export const sendCommand: vi.Mock<
+    typeof chrome.debugger.sendCommand
+  >
   /**
    * Since Chrome 28.
    *
@@ -1979,7 +2041,9 @@ export namespace Debugger {
    *
    * Parameter result: Array of TargetInfo objects corresponding to the available debug targets.
    */
-  export const getTargets: vi.Mock<typeof chrome.debugger.getTargets>
+  export const getTargets: vi.Mock<
+    typeof chrome.debugger.getTargets
+  >
 
   /** Fired when browser terminates debugging session for the tab. This happens when either the tab is being closed or Chrome DevTools is being invoked for the attached tab. */
   export const onDetach: DebuggerDetachedEvent
@@ -2176,9 +2240,8 @@ export namespace DeclarativeWebRequest {
   }
 
   export interface RequestedEvent
-    extends VitestChromeNamespace.events.DeclarativeContentEvent<
-      Function
-    > {}
+    extends VitestChromeNamespace.events
+      .DeclarativeContentEvent<Function> {}
 
   export const onRequest: RequestedEvent
 }
@@ -2205,14 +2268,18 @@ export namespace DesktopCapture {
    *
    * Parameter streamId: An opaque string that can be passed to getUserMedia() API to generate media stream that corresponds to the source selected by the user. If user didn't select any source (i.e. canceled the prompt) then the callback is called with an empty streamId. The created streamId can be used only once and expires after a few seconds when it is not used.
    */
-  export const chooseDesktopMedia: vi.Mock<typeof chrome.desktopCapture.chooseDesktopMedia>
+  export const chooseDesktopMedia: vi.Mock<
+    typeof chrome.desktopCapture.chooseDesktopMedia
+  >
 
   /**
    * Hides desktop media picker dialog shown by chooseDesktopMedia().
    *
    * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
    */
-  export const cancelChooseDesktopMedia: vi.Mock<typeof chrome.desktopCapture.cancelChooseDesktopMedia>
+  export const cancelChooseDesktopMedia: vi.Mock<
+    typeof chrome.desktopCapture.cancelChooseDesktopMedia
+  >
 }
 
 ////////////////////
@@ -2312,7 +2379,9 @@ export namespace Devtools.inspectedWindow {
   export const tabId: number
 
   /** Reloads the inspected page. */
-  export const reload: vi.Mock<typeof chrome.devtools.inspectedWindow.reload>
+  export const reload: vi.Mock<
+    typeof chrome.devtools.inspectedWindow.reload
+  >
 
   // /**
   //  * Evaluates a JavaScript expression in the context of the main frame of the inspected page. The expression must evaluate to a JSON-compliant object, otherwise an exception is thrown. The eval function can report either a DevTools-side error or a JavaScript exception that occurs during evaluation. In either case, the result parameter of the callback is undefined. In the case of a DevTools-side error, the isException parameter is non-null and has isError set to true and code set to an error code. In the case of a JavaScript error, isException is set to true and value is set to the string value of thrown object.
@@ -2344,7 +2413,9 @@ export namespace Devtools.inspectedWindow {
    *
    * function(array of Resource resources) {...};
    */
-  export const getResources: vi.Mock<typeof chrome.devtools.inspectedWindow.getResources>
+  export const getResources: vi.Mock<
+    typeof chrome.devtools.inspectedWindow.getResources
+  >
 
   /** Fired when a new resource is added to the inspected page. */
   export const onResourceAdded: ResourceAddedEvent
@@ -2411,7 +2482,9 @@ export namespace Devtools.network {
    *
    * Parameter harLog: A HAR log. See HAR specification for details.
    */
-  export const getHAR: vi.Mock<typeof chrome.devtools.network.getHAR>
+  export const getHAR: vi.Mock<
+    typeof chrome.devtools.network.getHAR
+  >
 
   /** Fired when a network request is finished and all request data are available. */
   export const onRequestFinished: RequestFinishedEvent
@@ -2661,7 +2734,9 @@ export namespace Devtools.panels {
    *
    * Parameter panel: An ExtensionPanel object representing the created panel.
    */
-  export const create: vi.Mock<typeof chrome.devtools.panels.create>
+  export const create: vi.Mock<
+    typeof chrome.devtools.panels.create
+  >
   /**
    * Specifies the function to be called when the user clicks a resource link in the Developer Tools window. To unset the handler, either call the method with no parameters or pass null as the parameter.
    *
@@ -2673,7 +2748,9 @@ export namespace Devtools.panels {
    *
    * Parameter resource: A devtools.inspectedWindow.Resource object for the resource that was clicked.
    */
-  export const setOpenResourceHandler: vi.Mock<typeof chrome.devtools.panels.setOpenResourceHandler>
+  export const setOpenResourceHandler: vi.Mock<
+    typeof chrome.devtools.panels.setOpenResourceHandler
+  >
   /**
    * Since Chrome 38.
    *
@@ -2689,7 +2766,9 @@ export namespace Devtools.panels {
    *
    * function() {...};
    */
-  export const openResource: vi.Mock<typeof chrome.devtools.panels.openResource>
+  export const openResource: vi.Mock<
+    typeof chrome.devtools.panels.openResource
+  >
 }
 
 ////////////////////
@@ -2992,7 +3071,9 @@ export namespace Downloads {
    *
    * function(string iconURL) {...};
    */
-  export const getFileIcon: vi.Mock<typeof chrome.downloads.getFileIcon>
+  export const getFileIcon: vi.Mock<
+    typeof chrome.downloads.getFileIcon
+  >
 
   /**
    * Resume a paused download. If the request was successful the download is in progress and unpaused. Otherwise runtime.lastError contains an error message. The request will fail if the download is not active.
@@ -3029,7 +3110,9 @@ export namespace Downloads {
    *
    * function(integer downloadId) {...};
    */
-  export const download: vi.Mock<typeof chrome.downloads.download>
+  export const download: vi.Mock<
+    typeof chrome.downloads.download
+  >
   /**
    * Open the downloaded file now if the DownloadItem is complete; otherwise returns an error through runtime.lastError. Requires the "downloads.open" permission in addition to the "downloads" permission. An onChanged event will fire when the item is opened for the first time.
    *
@@ -3044,7 +3127,9 @@ export namespace Downloads {
   export const show: vi.Mock<typeof chrome.downloads.show>
 
   /** Show the default Downloads folder in a file manager. */
-  export const showDefaultFolder: vi.Mock<typeof chrome.downloads.showDefaultFolder>
+  export const showDefaultFolder: vi.Mock<
+    typeof chrome.downloads.showDefaultFolder
+  >
 
   /**
    * Erase matching DownloadItem from history without deleting the downloaded file. An onErased event will fire for each DownloadItem that matches query, then callback will be called.
@@ -3061,7 +3146,9 @@ export namespace Downloads {
    *
    * function() {...};
    */
-  export const removeFile: vi.Mock<typeof chrome.downloads.removeFile>
+  export const removeFile: vi.Mock<
+    typeof chrome.downloads.removeFile
+  >
   /**
    * Prompt the user to accept a dangerous download. Can only be called from a visible context (tab, window, or page/browser action popup). Does not automatically accept dangerous downloads. If the download is accepted, then an onChanged event will fire, otherwise nothing will happen. When all the data is fetched into a temporary file and either the download is not dangerous or the danger has been accepted, then the temporary file is renamed to the target filename, the |state| changes to 'complete', and onChanged fires.
    *
@@ -3073,11 +3160,15 @@ export namespace Downloads {
    *
    * function() {...};
    */
-  export const acceptDanger: vi.Mock<typeof chrome.downloads.acceptDanger>
+  export const acceptDanger: vi.Mock<
+    typeof chrome.downloads.acceptDanger
+  >
   /** Initiate dragging the downloaded file to another application. Call in a javascript ondragstart handler. */
   export const drag: vi.Mock<typeof chrome.downloads.drag>
   /** Enable or disable the gray shelf at the bottom of every window associated with the current browser profile. The shelf will be disabled as long as at least one extension has disabled it. Enabling the shelf while at least one other extension has disabled it will return an error through runtime.lastError. Requires the "downloads.shelf" permission in addition to the "downloads" permission. */
-  export const setShelfEnabled: vi.Mock<typeof chrome.downloads.setShelfEnabled>
+  export const setShelfEnabled: vi.Mock<
+    typeof chrome.downloads.setShelfEnabled
+  >
 
   /** When any of a DownloadItem's properties except bytesReceived and estimatedEndTime changes, this event fires with the downloadId and an object containing the properties that changed. */
   export const onChanged: DownloadChangedEvent
@@ -3132,7 +3223,9 @@ export namespace Enterprise.platformKeys {
    *
    * Parameter tokens: The list of available tokens.
    */
-  export const getTokens: vi.Mock<typeof chrome.enterprise.platformKeys.getTokens>
+  export const getTokens: vi.Mock<
+    typeof chrome.enterprise.platformKeys.getTokens
+  >
   /**
    * Returns the list of all client certificates available from the given token. Can be used to check for the existence and expiration of client certificates that are usable for a certain authentication.
    *
@@ -3146,7 +3239,9 @@ export namespace Enterprise.platformKeys {
    *
    * Parameter certificates: The list of certificates, each in DER encoding of a X.509 certificate.
    */
-  export const getCertificates: vi.Mock<typeof chrome.enterprise.platformKeys.getCertificates>
+  export const getCertificates: vi.Mock<
+    typeof chrome.enterprise.platformKeys.getCertificates
+  >
   /**
    * Imports certificate to the given token if the certified key is already stored in this token. After a successful certification request, this function should be used to store the obtained certificate and to make it available to the operating system and browser for authentication.
    *
@@ -3160,7 +3255,9 @@ export namespace Enterprise.platformKeys {
    *
    * function() {...};
    */
-  export const importCertificate: vi.Mock<typeof chrome.enterprise.platformKeys.importCertificate>
+  export const importCertificate: vi.Mock<
+    typeof chrome.enterprise.platformKeys.importCertificate
+  >
   /**
    * Removes certificate from the given token if present. Should be used to remove obsolete certificates so that they are not considered during authentication and do not clutter the certificate choice. Should be used to free storage in the certificate store.
    *
@@ -3174,7 +3271,9 @@ export namespace Enterprise.platformKeys {
    *
    * function() {...};
    */
-  export const removeCertificate: vi.Mock<typeof chrome.enterprise.platformKeys.removeCertificate>
+  export const removeCertificate: vi.Mock<
+    typeof chrome.enterprise.platformKeys.removeCertificate
+  >
 }
 
 ////////////////////
@@ -3203,7 +3302,9 @@ export namespace Enterprise.deviceAttributes {
    *
    * function(string deviceId) {...};
    */
-  export const getDirectoryDeviceId: vi.Mock<typeof chrome.enterprise.deviceAttributes.getDirectoryDeviceId>
+  export const getDirectoryDeviceId: vi.Mock<
+    typeof chrome.enterprise.deviceAttributes.getDirectoryDeviceId
+  >
   /**
    * @since Chrome 66.
    *
@@ -3221,7 +3322,9 @@ export namespace Enterprise.deviceAttributes {
    *
    * @param callback Called with the serial number of the device.
    */
-  export const getDeviceSerialNumber: vi.Mock<typeof chrome.enterprise.deviceAttributes.getDeviceSerialNumber>
+  export const getDeviceSerialNumber: vi.Mock<
+    typeof chrome.enterprise.deviceAttributes.getDeviceSerialNumber
+  >
   /**
    * @since Chrome 66.
    *
@@ -3233,7 +3336,9 @@ export namespace Enterprise.deviceAttributes {
    *
    * @param callback Called with the Asset ID of the device.
    */
-  export const getDeviceAssetId: vi.Mock<typeof chrome.enterprise.deviceAttributes.getDeviceAssetId>
+  export const getDeviceAssetId: vi.Mock<
+    typeof chrome.enterprise.deviceAttributes.getDeviceAssetId
+  >
   /**
    * @since Chrome 66.
    *
@@ -3245,7 +3350,9 @@ export namespace Enterprise.deviceAttributes {
    *
    * @param callback Called with the Annotated Location of the device.
    */
-  export const getDeviceAnnotatedLocation: vi.Mock<typeof chrome.enterprise.deviceAttributes.getDeviceAnnotatedLocation>
+  export const getDeviceAnnotatedLocation: vi.Mock<
+    typeof chrome.enterprise.deviceAttributes.getDeviceAnnotatedLocation
+  >
 }
 
 ////////////////////
@@ -3458,7 +3565,9 @@ export namespace Extension {
   export const inIncognitoContext: boolean
 
   /** Returns the JavaScript 'window' object for the background page running inside the current extension. Returns null if the extension has no background page. */
-  export const getBackgroundPage: vi.Mock<typeof chrome.extension.getBackgroundPage>
+  export const getBackgroundPage: vi.Mock<
+    typeof chrome.extension.getBackgroundPage
+  >
 
   /**
    * Converts a relative path within an extension install directory to a fully-qualified URL.
@@ -3471,9 +3580,13 @@ export namespace Extension {
    *
    * Since Chrome 9.
    */
-  export const setUpdateUrlData: vi.Mock<typeof chrome.extension.setUpdateUrlData>
+  export const setUpdateUrlData: vi.Mock<
+    typeof chrome.extension.setUpdateUrlData
+  >
   /** Returns an array of the JavaScript 'window' objects for each of the pages running inside the current extension. */
-  export const getViews: vi.Mock<typeof chrome.extension.getViews>
+  export const getViews: vi.Mock<
+    typeof chrome.extension.getViews
+  >
   /**
    * Retrieves the state of the extension's access to the 'file://' scheme (as determined by the user-controlled 'Allow access to File URLs' checkbox.
    *
@@ -3485,7 +3598,9 @@ export namespace Extension {
    *
    * Parameter isAllowedAccess: True if the extension can access the 'file://' scheme, false otherwise.
    */
-  export const isAllowedFileSchemeAccess: vi.Mock<typeof chrome.extension.isAllowedFileSchemeAccess>
+  export const isAllowedFileSchemeAccess: vi.Mock<
+    typeof chrome.extension.isAllowedFileSchemeAccess
+  >
   /**
    * Retrieves the state of the extension's access to Incognito-mode (as determined by the user-controlled 'Allowed in Incognito' checkbox.
    *
@@ -3497,7 +3612,9 @@ export namespace Extension {
    *
    * Parameter isAllowedAccess: True if the extension has access to Incognito mode, false otherwise.
    */
-  export const isAllowedIncognitoAccess: vi.Mock<typeof chrome.extension.isAllowedIncognitoAccess>
+  export const isAllowedIncognitoAccess: vi.Mock<
+    typeof chrome.extension.isAllowedIncognitoAccess
+  >
   /**
    * Sends a single request to other listeners within the extension. Similar to runtime.connect, but only sends a single request with an optional response. The extension.onRequest event is fired in each page of the extension.
    *
@@ -3511,14 +3628,18 @@ export namespace Extension {
    *
    * Parameter response: The JSON response object sent by the handler of the request. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
    */
-  export const sendRequest: vi.Mock<typeof chrome.extension.sendRequest>
+  export const sendRequest: vi.Mock<
+    typeof chrome.extension.sendRequest
+  >
 
   /**
    * Returns an array of the JavaScript 'window' objects for each of the tabs running inside the current extension. If windowId is specified, returns only the 'window' objects of tabs attached to the specified window.
    *
    * @deprecated Deprecated since Chrome 33. Please use extension.getViews {type: "tab"}.
    */
-  export const getExtensionTabs: vi.Mock<typeof chrome.extension.getExtensionTabs>
+  export const getExtensionTabs: vi.Mock<
+    typeof chrome.extension.getExtensionTabs
+  >
 
   /**
    * Fired when a request is sent from either an extension process or a content script.
@@ -3598,7 +3719,9 @@ export namespace FileBrowserHandler {
    *
    * Parameter result: Result of the method.
    */
-  export const selectFile: vi.Mock<typeof chrome.fileBrowserHandler.selectFile>
+  export const selectFile: vi.Mock<
+    typeof chrome.fileBrowserHandler.selectFile
+  >
 
   /** Fired when file system action is executed from ChromeOS file browser. */
   export const onExecute: FileBrowserHandlerExecuteEvent
@@ -4002,7 +4125,9 @@ export namespace FileSystemProvider {
    *
    * function() {...};
    */
-  export const mount: vi.Mock<typeof chrome.fileSystemProvider.mount>
+  export const mount: vi.Mock<
+    typeof chrome.fileSystemProvider.mount
+  >
   /**
    * Unmounts a file system with the given fileSystemId. It must be called after onUnmountRequested is invoked. Also, the providing extension can decide to perform unmounting if not requested (eg. in case of lost connection, or a file error).
    *
@@ -4014,7 +4139,9 @@ export namespace FileSystemProvider {
    *
    * function() {...};
    */
-  export const unmount: vi.Mock<typeof chrome.fileSystemProvider.unmount>
+  export const unmount: vi.Mock<
+    typeof chrome.fileSystemProvider.unmount
+  >
   /**
    * Returns all file systems mounted by the extension.
    *
@@ -4024,7 +4151,9 @@ export namespace FileSystemProvider {
    *
    * function(array of FileSystemInfo fileSystems) {...};
    */
-  export const getAll: vi.Mock<typeof chrome.fileSystemProvider.getAll>
+  export const getAll: vi.Mock<
+    typeof chrome.fileSystemProvider.getAll
+  >
   /**
    * Returns information about a file system with the passed fileSystemId.
    *
@@ -4056,7 +4185,9 @@ export namespace FileSystemProvider {
    *
    * function() {...};
    */
-  export const notify: vi.Mock<typeof chrome.fileSystemProvider.notify>
+  export const notify: vi.Mock<
+    typeof chrome.fileSystemProvider.notify
+  >
 
   /** Raised when unmounting for the file system with the fileSystemId identifier is requested. In the response, the unmount API method must be called together with successCallback. If unmounting is not possible (eg. due to a pending operation), then errorCallback must be called.  */
   export const onUnmountRequested: RequestedEvent
@@ -4205,7 +4336,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const setDefaultFontSize: vi.Mock<typeof chrome.fontSettings.setDefaultFontSize>
+  export const setDefaultFontSize: vi.Mock<
+    typeof chrome.fontSettings.setDefaultFontSize
+  >
   /**
    * Gets the font for a given script and generic font family.
    *
@@ -4213,7 +4346,9 @@ export namespace FontSettings {
    *
    * function(object details) {...};
    */
-  export const getFont: vi.Mock<typeof chrome.fontSettings.getFont>
+  export const getFont: vi.Mock<
+    typeof chrome.fontSettings.getFont
+  >
   /**
    * Gets the default font size.
    *
@@ -4223,7 +4358,9 @@ export namespace FontSettings {
    *
    * function(object details) {...};
    */
-  export const getDefaultFontSize: vi.Mock<typeof chrome.fontSettings.getDefaultFontSize>
+  export const getDefaultFontSize: vi.Mock<
+    typeof chrome.fontSettings.getDefaultFontSize
+  >
   /**
    * Gets the minimum font size.
    *
@@ -4233,7 +4370,9 @@ export namespace FontSettings {
    *
    * function(object details) {...};
    */
-  export const getMinimumFontSize: vi.Mock<typeof chrome.fontSettings.getMinimumFontSize>
+  export const getMinimumFontSize: vi.Mock<
+    typeof chrome.fontSettings.getMinimumFontSize
+  >
   /**
    * Sets the minimum font size.
    *
@@ -4241,7 +4380,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const setMinimumFontSize: vi.Mock<typeof chrome.fontSettings.setMinimumFontSize>
+  export const setMinimumFontSize: vi.Mock<
+    typeof chrome.fontSettings.setMinimumFontSize
+  >
   /**
    * Gets the default size for fixed width fonts.
    *
@@ -4251,7 +4392,9 @@ export namespace FontSettings {
    *
    * function(object details) {...};
    */
-  export const getDefaultFixedFontSize: vi.Mock<typeof chrome.fontSettings.getDefaultFixedFontSize>
+  export const getDefaultFixedFontSize: vi.Mock<
+    typeof chrome.fontSettings.getDefaultFixedFontSize
+  >
   /**
    * Clears the default font size set by this extension, if any.
    *
@@ -4261,7 +4404,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const clearDefaultFontSize: vi.Mock<typeof chrome.fontSettings.clearDefaultFontSize>
+  export const clearDefaultFontSize: vi.Mock<
+    typeof chrome.fontSettings.clearDefaultFontSize
+  >
   /**
    * Sets the default size for fixed width fonts.
    *
@@ -4269,7 +4414,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const setDefaultFixedFontSize: vi.Mock<typeof chrome.fontSettings.setDefaultFixedFontSize>
+  export const setDefaultFixedFontSize: vi.Mock<
+    typeof chrome.fontSettings.setDefaultFixedFontSize
+  >
   /**
    * Clears the font set by this extension, if any.
    *
@@ -4277,7 +4424,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const clearFont: vi.Mock<typeof chrome.fontSettings.clearFont>
+  export const clearFont: vi.Mock<
+    typeof chrome.fontSettings.clearFont
+  >
   /**
    * Sets the font for a given script and generic font family.
    *
@@ -4285,7 +4434,9 @@ export namespace FontSettings {
    *
    * function(object details) {...};
    */
-  export const setFont: vi.Mock<typeof chrome.fontSettings.setFont>
+  export const setFont: vi.Mock<
+    typeof chrome.fontSettings.setFont
+  >
   /**
    * Clears the minimum font size set by this extension, if any.
    *
@@ -4295,7 +4446,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const clearMinimumFontSize: vi.Mock<typeof chrome.fontSettings.clearMinimumFontSize>
+  export const clearMinimumFontSize: vi.Mock<
+    typeof chrome.fontSettings.clearMinimumFontSize
+  >
   /**
    * Gets a list of fonts on the system.
    *
@@ -4303,7 +4456,9 @@ export namespace FontSettings {
    *
    * function(array of FontName results) {...};
    */
-  export const getFontList: vi.Mock<typeof chrome.fontSettings.getFontList>
+  export const getFontList: vi.Mock<
+    typeof chrome.fontSettings.getFontList
+  >
   /**
    * Clears the default fixed font size set by this extension, if any.
    *
@@ -4313,7 +4468,9 @@ export namespace FontSettings {
    *
    * function() {...};
    */
-  export const clearDefaultFixedFontSize: vi.Mock<typeof chrome.fontSettings.clearDefaultFixedFontSize>
+  export const clearDefaultFixedFontSize: vi.Mock<
+    typeof chrome.fontSettings.clearDefaultFixedFontSize
+  >
 
   /** Fired when the default fixed font size setting changes. */
   export const onDefaultFixedFontSizeChanged: DefaultFixedFontSizeChangedEvent
@@ -4542,7 +4699,9 @@ export namespace History {
    *
    * function() {...};
    */
-  export const deleteRange: vi.Mock<typeof chrome.history.deleteRange>
+  export const deleteRange: vi.Mock<
+    typeof chrome.history.deleteRange
+  >
   /**
    * Deletes all items from the history.
    *
@@ -4550,7 +4709,9 @@ export namespace History {
    *
    * function() {...};
    */
-  export const deleteAll: vi.Mock<typeof chrome.history.deleteAll>
+  export const deleteAll: vi.Mock<
+    typeof chrome.history.deleteAll
+  >
   /**
    * Retrieves information about visits to a URL.
    *
@@ -4558,7 +4719,9 @@ export namespace History {
    *
    * function(array of VisitItem results) {...};
    */
-  export const getVisits: vi.Mock<typeof chrome.history.getVisits>
+  export const getVisits: vi.Mock<
+    typeof chrome.history.getVisits
+  >
   /**
    * Removes all occurrences of the given URL from the history.
    *
@@ -4566,7 +4729,9 @@ export namespace History {
    *
    * function() {...};
    */
-  export const deleteUrl: vi.Mock<typeof chrome.history.deleteUrl>
+  export const deleteUrl: vi.Mock<
+    typeof chrome.history.deleteUrl
+  >
 
   /** Fired when a URL is visited, providing the HistoryItem data for that URL. This event fires before the page has loaded. */
   export const onVisited: HistoryVisitedEvent
@@ -4616,7 +4781,9 @@ export namespace I18n {
    *
    * Parameter languages: Array of the accept languages of the browser, such as en-US,en,zh-CN
    */
-  export const getAcceptLanguages: vi.Mock<typeof chrome.i18n.getAcceptLanguages>
+  export const getAcceptLanguages: vi.Mock<
+    typeof chrome.i18n.getAcceptLanguages
+  >
 
   /**
    * Gets the localized string for the specified message. If the message is missing, this method returns an empty string (''). If the format of the getMessage() call is wrong — for example, messageName is not a string or the substitutions array has more than 9 elements — this method returns undefined.
@@ -4632,7 +4799,9 @@ export namespace I18n {
    *
    * @since Chrome 35.
    */
-  export const getUILanguage: vi.Mock<typeof chrome.i18n.getUILanguage>
+  export const getUILanguage: vi.Mock<
+    typeof chrome.i18n.getUILanguage
+  >
 
   /**
    * Detects the language of the provided text using CLD.
@@ -4641,7 +4810,9 @@ export namespace I18n {
    *
    * @param callback The callback parameter should be a function that looks like this: function(object result) {...};
    */
-  export const detectLanguage: vi.Mock<typeof chrome.i18n.detectLanguage>
+  export const detectLanguage: vi.Mock<
+    typeof chrome.i18n.detectLanguage
+  >
 }
 
 ////////////////////
@@ -4729,7 +4900,9 @@ export namespace Identity {
    *
    * Dev channel only.
    */
-  export const getAccounts: vi.Mock<typeof chrome.identity.getAccounts>
+  export const getAccounts: vi.Mock<
+    typeof chrome.identity.getAccounts
+  >
   /**
    * Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of manifest.json.
    *
@@ -4745,7 +4918,9 @@ export namespace Identity {
    *
    * function(string token) {...};
    */
-  export const getAuthToken: vi.Mock<typeof chrome.identity.getAuthToken>
+  export const getAuthToken: vi.Mock<
+    typeof chrome.identity.getAuthToken
+  >
   /**
    * Retrieves email address and obfuscated gaia id of the user signed into a profile.
    *
@@ -4753,7 +4928,9 @@ export namespace Identity {
    *
    * @since Chrome 37.
    */
-  export const getProfileUserInfo: vi.Mock<typeof chrome.identity.getProfileUserInfo>
+  export const getProfileUserInfo: vi.Mock<
+    typeof chrome.identity.getProfileUserInfo
+  >
   /**
    * Removes an OAuth2 access token from the Identity API's token cache.
    *
@@ -4767,7 +4944,9 @@ export namespace Identity {
    *
    * function() {...};
    */
-  export const removeCachedAuthToken: vi.Mock<typeof chrome.identity.removeCachedAuthToken>
+  export const removeCachedAuthToken: vi.Mock<
+    typeof chrome.identity.removeCachedAuthToken
+  >
   /**
    * Starts an auth flow at the specified URL.
    *
@@ -4783,7 +4962,9 @@ export namespace Identity {
    *
    * function(string responseUrl) {...};
    */
-  export const launchWebAuthFlow: vi.Mock<typeof chrome.identity.launchWebAuthFlow>
+  export const launchWebAuthFlow: vi.Mock<
+    typeof chrome.identity.launchWebAuthFlow
+  >
   /**
    * Generates a redirect URL to be used in launchWebAuthFlow.
    *
@@ -4793,7 +4974,9 @@ export namespace Identity {
    *
    * @param path Optional. The path appended to the end of the generated URL.
    */
-  export const getRedirectURL: vi.Mock<typeof chrome.identity.getRedirectURL>
+  export const getRedirectURL: vi.Mock<
+    typeof chrome.identity.getRedirectURL
+  >
 
   /**
    * Fired when signin state changes for an account on the user's profile.
@@ -4838,7 +5021,9 @@ export namespace Idle {
    *
    * @param intervalInSeconds Threshold, in seconds, used to determine when the system is in an idle state.
    */
-  export const setDetectionInterval: vi.Mock<typeof chrome.idle.setDetectionInterval>
+  export const setDetectionInterval: vi.Mock<
+    typeof chrome.idle.setDetectionInterval
+  >
 
   /** Fired when the system changes to an active, idle or locked state. The event fires with "locked" if the screen is locked or the screensaver activates, "idle" if the system is unlocked and the user has not generated any input for a specified number of seconds, and "active" when the user generates input on an idle system. */
   export const onStateChanged: IdleStateChangedEvent
@@ -5205,7 +5390,9 @@ export namespace Input.ime {
    *
    * function() {...};
    */
-  export const setMenuItems: vi.Mock<typeof chrome.input.ime.setMenuItems>
+  export const setMenuItems: vi.Mock<
+    typeof chrome.input.ime.setMenuItems
+  >
   /**
    * Commits the provided text to the current input.
    *
@@ -5215,7 +5402,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const commitText: vi.Mock<typeof chrome.input.ime.commitText>
+  export const commitText: vi.Mock<
+    typeof chrome.input.ime.commitText
+  >
   /**
    * Sets the current candidate list. This fails if this extension doesn't own the active IME
    *
@@ -5225,7 +5414,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const setCandidates: vi.Mock<typeof chrome.input.ime.setCandidates>
+  export const setCandidates: vi.Mock<
+    typeof chrome.input.ime.setCandidates
+  >
   /**
    * Set the current composition. If this extension does not own the active IME, this fails.
    *
@@ -5235,7 +5426,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const setComposition: vi.Mock<typeof chrome.input.ime.setComposition>
+  export const setComposition: vi.Mock<
+    typeof chrome.input.ime.setComposition
+  >
   /**
    * Updates the state of the MenuItems specified
    *
@@ -5245,7 +5438,9 @@ export namespace Input.ime {
    *
    * function() {...};
    */
-  export const updateMenuItems: vi.Mock<typeof chrome.input.ime.updateMenuItems>
+  export const updateMenuItems: vi.Mock<
+    typeof chrome.input.ime.updateMenuItems
+  >
   /**
    * Sets the properties of the candidate window. This fails if the extension doesn't own the active IME
    *
@@ -5255,7 +5450,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const setCandidateWindowProperties: vi.Mock<typeof chrome.input.ime.setCandidateWindowProperties>
+  export const setCandidateWindowProperties: vi.Mock<
+    typeof chrome.input.ime.setCandidateWindowProperties
+  >
   /**
    * Clear the current composition. If this extension does not own the active IME, this fails.
    *
@@ -5265,7 +5462,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const clearComposition: vi.Mock<typeof chrome.input.ime.clearComposition>
+  export const clearComposition: vi.Mock<
+    typeof chrome.input.ime.clearComposition
+  >
   /**
    * Set the position of the cursor in the candidate window. This is a no-op if this extension does not own the active IME.
    *
@@ -5275,7 +5474,9 @@ export namespace Input.ime {
    *
    * function(boolean success) {...};
    */
-  export const setCursorPosition: vi.Mock<typeof chrome.input.ime.setCursorPosition>
+  export const setCursorPosition: vi.Mock<
+    typeof chrome.input.ime.setCursorPosition
+  >
   /**
    * Sends the key events. This function is expected to be used by virtual keyboards. When key(s) on a virtual keyboard is pressed by a user, this function is used to propagate that event to the system.
    *
@@ -5287,21 +5488,27 @@ export namespace Input.ime {
    *
    * function() {...};
    */
-  export const sendKeyEvents: vi.Mock<typeof chrome.input.ime.sendKeyEvents>
+  export const sendKeyEvents: vi.Mock<
+    typeof chrome.input.ime.sendKeyEvents
+  >
 
   /**
    * Hides the input view window, which is popped up automatically by system. If the input view window is already hidden, this function will do nothing.
    *
    * @since Chrome 34.
    */
-  export const hideInputView: vi.Mock<typeof chrome.input.ime.hideInputView>
+  export const hideInputView: vi.Mock<
+    typeof chrome.input.ime.hideInputView
+  >
 
   /**
    * Deletes the text around the caret.
    *
    * @since Chrome 27.
    */
-  export const deleteSurroundingText: vi.Mock<typeof chrome.input.ime.deleteSurroundingText>
+  export const deleteSurroundingText: vi.Mock<
+    typeof chrome.input.ime.deleteSurroundingText
+  >
   /**
    * Indicates that the key event received by onKeyEvent is handled. This should only be called if the onKeyEvent listener is asynchronous.
    *
@@ -5311,7 +5518,9 @@ export namespace Input.ime {
    *
    * @param response True if the keystroke was handled, false if not
    */
-  export const keyEventHandled: vi.Mock<typeof chrome.input.ime.keyEventHandled>
+  export const keyEventHandled: vi.Mock<
+    typeof chrome.input.ime.keyEventHandled
+  >
 
   /** This event is sent when focus leaves a text box. It is sent to all extensions that are listening to this event, and enabled by the user. */
   export const onBlur: BlurEvent
@@ -5518,7 +5727,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const setEnabled: vi.Mock<typeof chrome.management.setEnabled>
+  export const setEnabled: vi.Mock<
+    typeof chrome.management.setEnabled
+  >
   /**
    * Returns a list of permission warnings for the given extension id.
    *
@@ -5530,7 +5741,9 @@ export namespace Management {
    *
    * function(array of string permissionWarnings) {...};
    */
-  export const getPermissionWarningsById: vi.Mock<typeof chrome.management.getPermissionWarningsById>
+  export const getPermissionWarningsById: vi.Mock<
+    typeof chrome.management.getPermissionWarningsById
+  >
   /**
    * Returns information about the installed extension, app, or theme that has the given ID.
    *
@@ -5562,7 +5775,9 @@ export namespace Management {
    *
    * function(array of string permissionWarnings) {...};
    */
-  export const getPermissionWarningsByManifest: vi.Mock<typeof chrome.management.getPermissionWarningsByManifest>
+  export const getPermissionWarningsByManifest: vi.Mock<
+    typeof chrome.management.getPermissionWarningsByManifest
+  >
   /**
    * Launches an application.
    *
@@ -5572,7 +5787,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const launchApp: vi.Mock<typeof chrome.management.launchApp>
+  export const launchApp: vi.Mock<
+    typeof chrome.management.launchApp
+  >
   /**
    * Uninstalls a currently installed app or extension.
    *
@@ -5584,7 +5801,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const uninstall: vi.Mock<typeof chrome.management.uninstall>
+  export const uninstall: vi.Mock<
+    typeof chrome.management.uninstall
+  >
   /**
    * Returns information about the calling extension, app, or theme. Note: This function can be used without requesting the 'management' permission in the manifest.
    *
@@ -5606,7 +5825,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const uninstallSelf: vi.Mock<typeof chrome.management.uninstallSelf>
+  export const uninstallSelf: vi.Mock<
+    typeof chrome.management.uninstallSelf
+  >
 
   /**
    * Display options to create shortcuts for an app. On Mac, only packaged app shortcuts can be created.
@@ -5617,7 +5838,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const createAppShortcut: vi.Mock<typeof chrome.management.createAppShortcut>
+  export const createAppShortcut: vi.Mock<
+    typeof chrome.management.createAppShortcut
+  >
   /**
    * Set the launch type of an app.
    *
@@ -5631,7 +5854,9 @@ export namespace Management {
    *
    * function() {...};
    */
-  export const setLaunchType: vi.Mock<typeof chrome.management.setLaunchType>
+  export const setLaunchType: vi.Mock<
+    typeof chrome.management.setLaunchType
+  >
   /**
    * Generate an app for a URL. Returns the generated bookmark app.
    *
@@ -5645,7 +5870,9 @@ export namespace Management {
    *
    * function( ExtensionInfo result) {...};
    */
-  export const generateAppForLink: vi.Mock<typeof chrome.management.generateAppForLink>
+  export const generateAppForLink: vi.Mock<
+    typeof chrome.management.generateAppForLink
+  >
 
   /** Fired when an app or extension has been disabled. */
   export const onDisabled: ManagementDisabledEvent
@@ -5701,7 +5928,9 @@ export namespace Networking.config {
    *
    * function() {...};
    */
-  export const setNetworkFilter: vi.Mock<typeof chrome.networking.config.setNetworkFilter>
+  export const setNetworkFilter: vi.Mock<
+    typeof chrome.networking.config.setNetworkFilter
+  >
   /**
    * Called by the extension to notify the network config API that it finished a captive portal authentication attempt and hand over the result of the attempt. This function must only be called with the GUID of the latest onCaptivePortalDetected event.
    *
@@ -5723,7 +5952,9 @@ export namespace Networking.config {
    *
    * function() {...};
    */
-  export const finishAuthentication: vi.Mock<typeof chrome.networking.config.finishAuthentication>
+  export const finishAuthentication: vi.Mock<
+    typeof chrome.networking.config.finishAuthentication
+  >
 
   /** This event fires everytime a captive portal is detected on a network matching any of the currently registered network filters and the user consents to use the extension for authentication. Network filters may be set using the setNetworkFilter. Upon receiving this event the extension should start its authentication attempt with the captive portal. When the extension finishes its attempt, it must call finishAuthentication with the GUID received with this event and the appropriate authentication result. */
   export const onCaptivePortalDetected: CaptivePorttalDetectedEvent
@@ -5879,7 +6110,9 @@ export namespace Notifications {
    *
    * function(string notificationId) {...};
    */
-  export const create: vi.Mock<typeof chrome.notifications.create>
+  export const create: vi.Mock<
+    typeof chrome.notifications.create
+  >
 
   /**
    * Updates an existing notification.
@@ -5896,7 +6129,9 @@ export namespace Notifications {
    *
    * function(boolean wasUpdated) {...};
    */
-  export const update: vi.Mock<typeof chrome.notifications.update>
+  export const update: vi.Mock<
+    typeof chrome.notifications.update
+  >
   /**
    * Clears the specified notification.
    *
@@ -5922,7 +6157,9 @@ export namespace Notifications {
    *
    * function(object notifications) {...};
    */
-  export const getAll: vi.Mock<typeof chrome.notifications.getAll>
+  export const getAll: vi.Mock<
+    typeof chrome.notifications.getAll
+  >
   /**
    * Retrieves whether the user has enabled notifications from this app or extension.
    *
@@ -5934,7 +6171,9 @@ export namespace Notifications {
    *
    * function( PermissionLevel level) {...};
    */
-  export const getPermissionLevel: vi.Mock<typeof chrome.notifications.getPermissionLevel>
+  export const getPermissionLevel: vi.Mock<
+    typeof chrome.notifications.getPermissionLevel
+  >
 }
 
 ////////////////////
@@ -5999,7 +6238,9 @@ export namespace Omnibox {
    *
    * @param suggestion A partial SuggestResult object, without the 'content' parameter.
    */
-  export const setDefaultSuggestion: vi.Mock<typeof chrome.omnibox.setDefaultSuggestion>
+  export const setDefaultSuggestion: vi.Mock<
+    typeof chrome.omnibox.setDefaultSuggestion
+  >
 
   /** User has accepted what is typed into the omnibox. */
   export const onInputEntered: OmniboxInputEnteredEvent
@@ -6096,13 +6337,17 @@ export namespace PageAction {
    *
    * @param callback Supported since Chrome 67
    */
-  export const setTitle: vi.Mock<typeof chrome.pageAction.setTitle>
+  export const setTitle: vi.Mock<
+    typeof chrome.pageAction.setTitle
+  >
   /**
    * Sets the html document to be opened as a popup when the user clicks on the page action's icon.
    *
    * @param callback Supported since Chrome 67
    */
-  export const setPopup: vi.Mock<typeof chrome.pageAction.setPopup>
+  export const setPopup: vi.Mock<
+    typeof chrome.pageAction.setPopup
+  >
   /**
    * Gets the title of the page action.
    *
@@ -6112,7 +6357,9 @@ export namespace PageAction {
    *
    * function(string result) {...};
    */
-  export const getTitle: vi.Mock<typeof chrome.pageAction.getTitle>
+  export const getTitle: vi.Mock<
+    typeof chrome.pageAction.getTitle
+  >
   /**
    * Gets the html document set as the popup for this page action.
    *
@@ -6122,7 +6369,9 @@ export namespace PageAction {
    *
    * function(string result) {...};
    */
-  export const getPopup: vi.Mock<typeof chrome.pageAction.getPopup>
+  export const getPopup: vi.Mock<
+    typeof chrome.pageAction.getPopup
+  >
   /**
    * Sets the icon for the page action. The icon can be specified either as the path to an image file or as the pixel data from a canvas element, or as dictionary of either one of those. Either the path or the imageData property must be specified.
    *
@@ -6163,7 +6412,9 @@ export namespace PageCapture {
    *
    * Parameter mhtmlData: The MHTML data as a Blob.
    */
-  export const saveAsMHTML: vi.Mock<typeof chrome.pageCapture.saveAsMHTML>
+  export const saveAsMHTML: vi.Mock<
+    typeof chrome.pageCapture.saveAsMHTML
+  >
 }
 
 ////////////////////
@@ -6225,7 +6476,9 @@ export namespace Permissions {
    *
    * Parameter result: True if the extension has the specified permissions.
    */
-  export const contains: vi.Mock<typeof chrome.permissions.contains>
+  export const contains: vi.Mock<
+    typeof chrome.permissions.contains
+  >
   /**
    * Gets the extension's current set of permissions.
    *
@@ -6245,7 +6498,9 @@ export namespace Permissions {
    *
    * Parameter granted: True if the user granted the specified permissions.
    */
-  export const request: vi.Mock<typeof chrome.permissions.request>
+  export const request: vi.Mock<
+    typeof chrome.permissions.request
+  >
   /**
    * Removes access to the specified permissions. If there are any problems removing the permissions, runtime.lastError will be set.
    *
@@ -6330,7 +6585,9 @@ export namespace PlatformKeys {
    *
    * Parameter matches: The list of certificates that match the request, that the extension has permission for and, if interactive is true, that were selected by the user.
    */
-  export const selectClientCertificates: vi.Mock<typeof chrome.platformKeys.selectClientCertificates>
+  export const selectClientCertificates: vi.Mock<
+    typeof chrome.platformKeys.selectClientCertificates
+  >
   /**
    * Passes the key pair of certificate for usage with platformKeys.subtleCrypto to callback.
    *
@@ -6346,10 +6603,14 @@ export namespace PlatformKeys {
    *
    * Optional parameter privateKey: Might be null if this extension does not have access to it.
    */
-  export const getKeyPair: vi.Mock<typeof chrome.platformKeys.getKeyPair>
+  export const getKeyPair: vi.Mock<
+    typeof chrome.platformKeys.getKeyPair
+  >
 
   /** An implementation of WebCrypto's SubtleCrypto that allows crypto operations on keys of client certificates that are available to this extension. */
-  export const subtleCrypto: vi.Mock<typeof chrome.platformKeys.subtleCrypto>
+  export const subtleCrypto: vi.Mock<
+    typeof chrome.platformKeys.subtleCrypto
+  >
 
   /**
    * Checks whether details.serverCertificateChain can be trusted for details.hostname according to the trust settings of the platform. Note: The actual behavior of the trust verification is not fully specified and might change in the future. The API implementation verifies certificate expiration, validates the certification path and checks trust by a known CA. The implementation is supposed to respect the EKU serverAuth and to support subject alternative names.
@@ -6358,7 +6619,9 @@ export namespace PlatformKeys {
    *
    * function(object result) {...};
    */
-  export const verifyTLSServerCertificate: vi.Mock<typeof chrome.platformKeys.verifyTLSServerCertificate>
+  export const verifyTLSServerCertificate: vi.Mock<
+    typeof chrome.platformKeys.verifyTLSServerCertificate
+  >
 }
 
 ////////////////////
@@ -6373,10 +6636,14 @@ export namespace PlatformKeys {
  */
 export namespace Power {
   /** Requests that power management be temporarily disabled. |level| describes the degree to which power management should be disabled. If a request previously made by the same app is still active, it will be replaced by the new request. */
-  export const requestKeepAwake: vi.Mock<typeof chrome.power.requestKeepAwake>
+  export const requestKeepAwake: vi.Mock<
+    typeof chrome.power.requestKeepAwake
+  >
 
   /** Releases a request previously made via requestKeepAwake(). */
-  export const releaseKeepAwake: vi.Mock<typeof chrome.power.releaseKeepAwake>
+  export const releaseKeepAwake: vi.Mock<
+    typeof chrome.power.releaseKeepAwake
+  >
 }
 
 ////////////////////
@@ -6675,11 +6942,11 @@ export namespace Serial {
      */
     bitrate?: number
     /** Optional. See ConnectionOptions.dataBits. This field may be omitted if an error occurred while querying the underlying device. */
-    dataBits?: typeof DataBits[keyof typeof DataBits]
+    dataBits?: (typeof DataBits)[keyof typeof DataBits]
     /** Optional. See ConnectionOptions.parityBit. This field may be omitted if an error occurred while querying the underlying device. */
-    parityBit?: typeof ParityBit[keyof typeof ParityBit]
+    parityBit?: (typeof ParityBit)[keyof typeof ParityBit]
     /** Optional. See ConnectionOptions.stopBits. This field may be omitted if an error occurred while querying the underlying device. */
-    stopBits?: typeof StopBits[keyof typeof StopBits]
+    stopBits?: (typeof StopBits)[keyof typeof StopBits]
     /** Optional. Flag indicating whether or not to enable RTS/CTS hardware flow control. Defaults to false. */
     ctsFlowControl?: boolean
   }
@@ -6708,11 +6975,11 @@ export namespace Serial {
      */
     bitrate?: number
     /** Optional. "eight" will be passed by default. */
-    dataBits?: typeof DataBits[keyof typeof DataBits]
+    dataBits?: (typeof DataBits)[keyof typeof DataBits]
     /** Optional. "no" will be passed by default. */
-    parityBit?: typeof ParityBit[keyof typeof ParityBit]
+    parityBit?: (typeof ParityBit)[keyof typeof ParityBit]
     /** Optional. "one" will be passed by default. */
-    stopBits?: typeof StopBits[keyof typeof StopBits]
+    stopBits?: (typeof StopBits)[keyof typeof StopBits]
     /** Optional. Flag indicating whether or not to enable RTS/CTS hardware flow control. Defaults to false. */
     ctsFlowControl?: boolean
     /**
@@ -6746,7 +7013,9 @@ export namespace Serial {
    *
    * function(array of object ports) {...};
    */
-  export const getDevices: vi.Mock<typeof chrome.serial.getDevices>
+  export const getDevices: vi.Mock<
+    typeof chrome.serial.getDevices
+  >
 
   /**
    * @since Chrome 33.
@@ -6801,7 +7070,9 @@ export namespace Serial {
    *
    * function(boolean result) {...};
    */
-  export const disconnect: vi.Mock<typeof chrome.serial.disconnect>
+  export const disconnect: vi.Mock<
+    typeof chrome.serial.disconnect
+  >
 
   /**
    * @since Chrome 33.
@@ -6850,7 +7121,9 @@ export namespace Serial {
    *
    * function(array of ConnectionInfo connectionInfos) {...};
    */
-  export const getConnections: vi.Mock<typeof chrome.serial.getConnections>
+  export const getConnections: vi.Mock<
+    typeof chrome.serial.getConnections
+  >
 
   /**
    * @since Chrome 33.
@@ -6899,7 +7172,9 @@ export namespace Serial {
    *
    * function(object signals) {...};
    */
-  export const getControlSignals: vi.Mock<typeof chrome.serial.getControlSignals>
+  export const getControlSignals: vi.Mock<
+    typeof chrome.serial.getControlSignals
+  >
 
   /**
    * @description Sets the state of control signals on a given connection.
@@ -6920,7 +7195,9 @@ export namespace Serial {
    *
    * function(boolean result) {...};
    */
-  export const setControlSignals: vi.Mock<typeof chrome.serial.setControlSignals>
+  export const setControlSignals: vi.Mock<
+    typeof chrome.serial.setControlSignals
+  >
 
   /**
    * @since Chrome 45.
@@ -6954,7 +7231,9 @@ export namespace Serial {
    *
    * function(boolean result) {...};
    */
-  export const clearBreak: vi.Mock<typeof chrome.serial.clearBreak>
+  export const clearBreak: vi.Mock<
+    typeof chrome.serial.clearBreak
+  >
 }
 
 export namespace Serial.onReceive {
@@ -6978,7 +7257,9 @@ export namespace Serial.onReceive {
    *
    * function(OnReceiveInfo info) {...};
    */
-  export const addListener: vi.Mock<typeof chrome.serial.onReceive.addListener>
+  export const addListener: vi.Mock<
+    typeof chrome.serial.onReceive.addListener
+  >
 }
 
 export namespace Serial.onReceiveError {
@@ -7025,7 +7306,9 @@ export namespace Serial.onReceiveError {
    *
    * function(OnReceiveErrorInfo info) {...};
    */
-  export const addListener: vi.Mock<typeof chrome.serial.onReceiveError.addListener>
+  export const addListener: vi.Mock<
+    typeof chrome.serial.onReceiveError.addListener
+  >
 }
 
 ////////////////////
@@ -7443,24 +7726,32 @@ export namespace Runtime {
    *
    * @param application The name of the registered application to connect to.
    */
-  export const connectNative: vi.Mock<typeof chrome.runtime.connectNative>
+  export const connectNative: vi.Mock<
+    typeof chrome.runtime.connectNative
+  >
 
   /** Retrieves the JavaScript 'window' object for the background page running inside the current extension/app. If the background page is an event page, the system will ensure it is loaded before calling the callback. If there is no background page, an error is set. */
-  export const getBackgroundPage: vi.Mock<typeof chrome.runtime.getBackgroundPage>
+  export const getBackgroundPage: vi.Mock<
+    typeof chrome.runtime.getBackgroundPage
+  >
 
   /**
    * Returns details about the app or extension from the manifest. The object returned is a serialization of the full manifest file.
    *
    * @returns The manifest details.
    */
-  export const getManifest: vi.Mock<typeof chrome.runtime.getManifest>
+  export const getManifest: vi.Mock<
+    typeof chrome.runtime.getManifest
+  >
 
   /**
    * Returns a DirectoryEntry for the package directory.
    *
    * @since Chrome 29.
    */
-  export const getPackageDirectoryEntry: vi.Mock<typeof chrome.runtime.getPackageDirectoryEntry>
+  export const getPackageDirectoryEntry: vi.Mock<
+    typeof chrome.runtime.getPackageDirectoryEntry
+  >
 
   /**
    * Returns information about the current platform.
@@ -7469,7 +7760,9 @@ export namespace Runtime {
    *
    * @param callback Called with results
    */
-  export const getPlatformInfo: vi.Mock<typeof chrome.runtime.getPlatformInfo>
+  export const getPlatformInfo: vi.Mock<
+    typeof chrome.runtime.getPlatformInfo
+  >
 
   /**
    * Converts a relative path within an app/extension install directory to a fully-qualified URL.
@@ -7496,7 +7789,9 @@ export namespace Runtime {
    *
    * Optional parameter details: If an update is available, this contains more information about the available update.
    */
-  export const requestUpdateCheck: vi.Mock<typeof chrome.runtime.requestUpdateCheck>
+  export const requestUpdateCheck: vi.Mock<
+    typeof chrome.runtime.requestUpdateCheck
+  >
 
   /**
    * Restart the ChromeOS device when the app runs in kiosk mode. Otherwise, it's no-op.
@@ -7514,7 +7809,9 @@ export namespace Runtime {
    *
    * Parameter response: The JSON response object sent by the handler of the message. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
    */
-  export const sendMessage: vi.Mock<typeof chrome.runtime.sendMessage>
+  export const sendMessage: vi.Mock<
+    typeof chrome.runtime.sendMessage
+  >
 
   /**
    * Send a single message to a native application.
@@ -7529,7 +7826,9 @@ export namespace Runtime {
    *
    * Parameter response: The response message sent by the native messaging host. If an error occurs while connecting to the native messaging host, the callback will be called with no arguments and runtime.lastError will be set to the error message.
    */
-  export const sendNativeMessage: vi.Mock<typeof chrome.runtime.sendNativeMessage>
+  export const sendNativeMessage: vi.Mock<
+    typeof chrome.runtime.sendNativeMessage
+  >
   /**
    * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and implement surveys. Maximum 255 characters.
    *
@@ -7541,7 +7840,9 @@ export namespace Runtime {
    *
    * @param callback Called when the uninstall URL is set. If the given URL is invalid, runtime.lastError will be set.
    */
-  export const setUninstallURL: vi.Mock<typeof chrome.runtime.setUninstallURL>
+  export const setUninstallURL: vi.Mock<
+    typeof chrome.runtime.setUninstallURL
+  >
   /**
    * Open your Extension's options page, if possible.
    *
@@ -7551,7 +7852,9 @@ export namespace Runtime {
    *
    * @since Chrome 42.
    */
-  export const openOptionsPage: vi.Mock<typeof chrome.runtime.openOptionsPage>
+  export const openOptionsPage: vi.Mock<
+    typeof chrome.runtime.openOptionsPage
+  >
 
   /**
    * Fired when a connection is made from either an extension process or a content script.
@@ -7631,9 +7934,15 @@ export namespace ScriptBadge {
       (tab: VitestChromeNamespace.tabs.Tab) => void
     > {}
 
-  export const getPopup: vi.Mock<typeof chrome.scriptBadge.getPopup>
-  export const getAttention: vi.Mock<typeof chrome.scriptBadge.getAttention>
-  export const setPopup: vi.Mock<typeof chrome.scriptBadge.setPopup>
+  export const getPopup: vi.Mock<
+    typeof chrome.scriptBadge.getPopup
+  >
+  export const getAttention: vi.Mock<
+    typeof chrome.scriptBadge.getAttention
+  >
+  export const setPopup: vi.Mock<
+    typeof chrome.scriptBadge.setPopup
+  >
 
   export const onClicked: ScriptBadgeClickedEvent
 }
@@ -7695,7 +8004,9 @@ export namespace Sessions {
    *
    * Parameter sessions: The list of closed entries in reverse order that they were closed (the most recently closed tab or window will be at index 0). The entries may contain either tabs or windows.
    */
-  export const getRecentlyClosed: vi.Mock<typeof chrome.sessions.getRecentlyClosed>
+  export const getRecentlyClosed: vi.Mock<
+    typeof chrome.sessions.getRecentlyClosed
+  >
 
   /**
    * Retrieves all devices with synced sessions.
@@ -7704,7 +8015,9 @@ export namespace Sessions {
    *
    * Parameter devices: The list of sessions.Device objects for each synced session, sorted in order from device with most recently modified session to device with least recently modified session. tabs.Tab objects are sorted by recency in the windows.Window of the sessions.Session objects.
    */
-  export const getDevices: vi.Mock<typeof chrome.sessions.getDevices>
+  export const getDevices: vi.Mock<
+    typeof chrome.sessions.getDevices
+  >
 
   /**
    * Reopens a windows.Window or tabs.Tab, with an optional callback to run when the entry has been restored.
@@ -7902,17 +8215,25 @@ export namespace Socket {
   export const destroy: vi.Mock<typeof chrome.socket.destroy>
   export const connect: vi.Mock<typeof chrome.socket.connect>
   export const bind: vi.Mock<typeof chrome.socket.bind>
-  export const disconnect: vi.Mock<typeof chrome.socket.disconnect>
+  export const disconnect: vi.Mock<
+    typeof chrome.socket.disconnect
+  >
   export const read: vi.Mock<typeof chrome.socket.read>
   export const write: vi.Mock<typeof chrome.socket.write>
   export const recvFrom: vi.Mock<typeof chrome.socket.recvFrom>
   export const sendTo: vi.Mock<typeof chrome.socket.sendTo>
   export const listen: vi.Mock<typeof chrome.socket.listen>
   export const accept: vi.Mock<typeof chrome.socket.accept>
-  export const setKeepAlive: vi.Mock<typeof chrome.socket.setKeepAlive>
-  export const setNoDelay: vi.Mock<typeof chrome.socket.setNoDelay>
+  export const setKeepAlive: vi.Mock<
+    typeof chrome.socket.setKeepAlive
+  >
+  export const setNoDelay: vi.Mock<
+    typeof chrome.socket.setNoDelay
+  >
   export const getInfo: vi.Mock<typeof chrome.socket.getInfo>
-  export const getNetworkList: vi.Mock<typeof chrome.socket.getNetworkList>
+  export const getNetworkList: vi.Mock<
+    typeof chrome.socket.getNetworkList
+  >
 }
 
 ////////////////////
@@ -7982,7 +8303,9 @@ export namespace System.memory {
   }
 
   /** Get physical memory information. */
-  export const getInfo: vi.Mock<typeof chrome.system.memory.getInfo>
+  export const getInfo: vi.Mock<
+    typeof chrome.system.memory.getInfo
+  >
 }
 
 ////////////////////
@@ -8033,7 +8356,9 @@ export namespace System.storage {
     > {}
 
   /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
-  export const getInfo: vi.Mock<typeof chrome.system.storage.getInfo>
+  export const getInfo: vi.Mock<
+    typeof chrome.system.storage.getInfo
+  >
   /**
    * Ejects a removable storage device.
    *
@@ -8041,13 +8366,17 @@ export namespace System.storage {
    *
    * Parameter result: success: The ejection command is successful -- the application can prompt the user to remove the device; in_use: The device is in use by another application. The ejection did not succeed; the user should not remove the device until the other application is done with the device; no_such_device: There is no such device known. failure: The ejection command failed.
    */
-  export const ejectDevice: vi.Mock<typeof chrome.system.storage.ejectDevice>
+  export const ejectDevice: vi.Mock<
+    typeof chrome.system.storage.ejectDevice
+  >
   /**
    * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
    *
    * @since Dev channel only.
    */
-  export const getAvailableCapacity: vi.Mock<typeof chrome.system.storage.getAvailableCapacity>
+  export const getAvailableCapacity: vi.Mock<
+    typeof chrome.system.storage.getAvailableCapacity
+  >
 
   /** Fired when a new removable storage is attached to the system. */
   export const onAttached: SystemStorageAttachedEvent
@@ -8175,7 +8504,7 @@ export namespace System.display {
      *
      * @see enum
      */
-    position: typeof DisplayPosition[keyof typeof DisplayPosition]
+    position: (typeof DisplayPosition)[keyof typeof DisplayPosition]
     /** The offset of the display along the connected edge. 0 indicates that the topmost or leftmost corners are aligned. */
     offset: number
   }
@@ -8441,7 +8770,9 @@ export namespace System.display {
    *
    * @param callback The callback to invoke with the results.
    */
-  export const getInfo: vi.Mock<typeof chrome.system.display.getInfo>
+  export const getInfo: vi.Mock<
+    typeof chrome.system.display.getInfo
+  >
 
   /**
    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -8454,7 +8785,9 @@ export namespace System.display {
    *
    * @param callback The callback to invoke with the results.
    */
-  export const getDisplayLayout: vi.Mock<typeof chrome.system.display.getDisplayLayout>
+  export const getDisplayLayout: vi.Mock<
+    typeof chrome.system.display.getDisplayLayout
+  >
 
   /**
    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -8473,7 +8806,9 @@ export namespace System.display {
    *
    * @param {() => void} [callback] Empty function called when the function finishes. To find out whether the function succeeded, runtime.lastError should be queried.
    */
-  export const setDisplayProperties: vi.Mock<typeof chrome.system.display.setDisplayProperties>
+  export const setDisplayProperties: vi.Mock<
+    typeof chrome.system.display.setDisplayProperties
+  >
 
   /**
    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -8494,7 +8829,9 @@ export namespace System.display {
    *
    * @param callback Empty function called when the function finishes. To find out whether the function succeeded, runtime.lastError should be queried.
    */
-  export const setDisplayLayout: vi.Mock<typeof chrome.system.display.setDisplayLayout>
+  export const setDisplayLayout: vi.Mock<
+    typeof chrome.system.display.setDisplayLayout
+  >
 
   /**
    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -8511,7 +8848,9 @@ export namespace System.display {
    *
    * @param {boolean} enabled True if unified desktop should be enabled.
    */
-  export const enableUnifiedDesktop: vi.Mock<typeof chrome.system.display.enableUnifiedDesktop>
+  export const enableUnifiedDesktop: vi.Mock<
+    typeof chrome.system.display.enableUnifiedDesktop
+  >
   /**
    * Starts overscan calibration for a display.
    *
@@ -8523,7 +8862,9 @@ export namespace System.display {
    *
    * @param id The display's unique identifier.
    */
-  export const overscanCalibrationStart: vi.Mock<typeof chrome.system.display.overscanCalibrationStart>
+  export const overscanCalibrationStart: vi.Mock<
+    typeof chrome.system.display.overscanCalibrationStart
+  >
   /**
    * Adjusts the current overscan insets for a display.
    *
@@ -8539,7 +8880,9 @@ export namespace System.display {
    *
    * @param delta The amount to change the overscan insets.
    */
-  export const overscanCalibrationAdjust: vi.Mock<typeof chrome.system.display.overscanCalibrationAdjust>
+  export const overscanCalibrationAdjust: vi.Mock<
+    typeof chrome.system.display.overscanCalibrationAdjust
+  >
 
   /**
    * Resets the overscan insets for a display to the last saved value (i.e before Start was called).
@@ -8548,7 +8891,9 @@ export namespace System.display {
    *
    * @param id The display's unique identifier.
    */
-  export const overscanCalibrationReset: vi.Mock<typeof chrome.system.display.overscanCalibrationReset>
+  export const overscanCalibrationReset: vi.Mock<
+    typeof chrome.system.display.overscanCalibrationReset
+  >
 
   /**
    * Complete overscan adjustments for a display by saving the current values and hiding the overlay.
@@ -8557,7 +8902,9 @@ export namespace System.display {
    *
    * @param id The display's unique identifier.
    */
-  export const overscanCalibrationComplete: vi.Mock<typeof chrome.system.display.overscanCalibrationComplete>
+  export const overscanCalibrationComplete: vi.Mock<
+    typeof chrome.system.display.overscanCalibrationComplete
+  >
 
   /**
    * Displays the native touch calibration UX for the display with **id** as display id.
@@ -8574,7 +8921,9 @@ export namespace System.display {
    *
    * @param callback Optional callback to inform the caller that the touch calibration has ended. The argument of the callback informs if the calibration was a success or not.
    */
-  export const showNativeTouchCalibration: vi.Mock<typeof chrome.system.display.showNativeTouchCalibration>
+  export const showNativeTouchCalibration: vi.Mock<
+    typeof chrome.system.display.showNativeTouchCalibration
+  >
 
   /**
    * Starts custom touch calibration for a display.
@@ -8587,7 +8936,9 @@ export namespace System.display {
    *
    * @param id The display's unique identifier.
    */
-  export const startCustomTouchCalibration: vi.Mock<typeof chrome.system.display.startCustomTouchCalibration>
+  export const startCustomTouchCalibration: vi.Mock<
+    typeof chrome.system.display.startCustomTouchCalibration
+  >
 
   /**
    * Sets the touch calibration pairs for a display.
@@ -8606,7 +8957,9 @@ export namespace System.display {
    *
    * @throws Error
    */
-  export const completeCustomTouchCalibration: vi.Mock<typeof chrome.system.display.completeCustomTouchCalibration>
+  export const completeCustomTouchCalibration: vi.Mock<
+    typeof chrome.system.display.completeCustomTouchCalibration
+  >
 
   /**
    * Resets the touch calibration for the display and brings it back to its default state by clearing any touch calibration data associated with the display.
@@ -8615,7 +8968,9 @@ export namespace System.display {
    *
    * @param id The display's unique identifier.
    */
-  export const clearTouchCalibration: vi.Mock<typeof chrome.system.display.clearTouchCalibration>
+  export const clearTouchCalibration: vi.Mock<
+    typeof chrome.system.display.clearTouchCalibration
+  >
 
   /**
    * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
@@ -8632,12 +8987,16 @@ export namespace System.display {
    *
    * mirroring destination displays.
    */
-  export const setMirrorMode: vi.Mock<typeof chrome.system.display.setMirrorMode>
+  export const setMirrorMode: vi.Mock<
+    typeof chrome.system.display.setMirrorMode
+  >
 
   /**
    *  Fired when anything changes to the display configuration.
    */
-  export const onDisplayChanged: VitestChromeNamespace.events.Event<() => void>
+  export const onDisplayChanged: VitestChromeNamespace.events.Event<
+    () => void
+  >
 }
 
 ////////////////////
@@ -8693,7 +9052,9 @@ export namespace TabCapture {
    *
    * @param callback Callback invoked with CaptureInfo[] for captured tabs.
    */
-  export const getCapturedTabs: vi.Mock<typeof chrome.tabCapture.getCapturedTabs>
+  export const getCapturedTabs: vi.Mock<
+    typeof chrome.tabCapture.getCapturedTabs
+  >
 
   /** Event fired when the capture status of a tab changes. This allows extension authors to keep track of the capture status of tabs to keep UI elements like page actions in sync. */
   export const onStatusChanged: CaptureStatusChangedEvent
@@ -9326,7 +9687,9 @@ export namespace Tabs {
    *
    * Parameter result: The result of the script in every injected frame.
    */
-  export const executeScript: vi.Mock<typeof chrome.tabs.executeScript>
+  export const executeScript: vi.Mock<
+    typeof chrome.tabs.executeScript
+  >
 
   /** Retrieves details about the specified tab. */
   export const get: vi.Mock<typeof chrome.tabs.get>
@@ -9335,7 +9698,9 @@ export namespace Tabs {
    *
    * @deprecated since Chrome 33. Please use tabs.query {windowId: windowId}.
    */
-  export const getAllInWindow: vi.Mock<typeof chrome.tabs.getAllInWindow>
+  export const getAllInWindow: vi.Mock<
+    typeof chrome.tabs.getAllInWindow
+  >
 
   /** Gets the tab that this script call is being made from. May be undefined if called from a non-tab context (for example: a background page or popup view). */
   export const getCurrent: vi.Mock<typeof chrome.tabs.getCurrent>
@@ -9344,7 +9709,9 @@ export namespace Tabs {
    *
    * @deprecated since Chrome 33. Please use tabs.query {active: true}.
    */
-  export const getSelected: vi.Mock<typeof chrome.tabs.getSelected>
+  export const getSelected: vi.Mock<
+    typeof chrome.tabs.getSelected
+  >
 
   /**
    * Creates a new tab.
@@ -9387,7 +9754,9 @@ export namespace Tabs {
    *
    * Parameter dataUrl: A data URL which encodes an image of the visible area of the captured tab. May be assigned to the 'src' property of an HTML Image element for display.
    */
-  export const captureVisibleTab: vi.Mock<typeof chrome.tabs.captureVisibleTab>
+  export const captureVisibleTab: vi.Mock<
+    typeof chrome.tabs.captureVisibleTab
+  >
 
   /**
    * Reload a tab.
@@ -9415,7 +9784,9 @@ export namespace Tabs {
    *
    * @since Chrome 20.
    */
-  export const sendMessage: vi.Mock<typeof chrome.tabs.sendMessage>
+  export const sendMessage: vi.Mock<
+    typeof chrome.tabs.sendMessage
+  >
 
   /**
    * Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The extension.onRequest event is fired in each content script running in the specified tab for the current extension.
@@ -9426,7 +9797,9 @@ export namespace Tabs {
    *
    * Parameter response: The JSON response object sent by the handler of the request. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and runtime.lastError will be set to the error message.
    */
-  export const sendRequest: vi.Mock<typeof chrome.tabs.sendRequest>
+  export const sendRequest: vi.Mock<
+    typeof chrome.tabs.sendRequest
+  >
   /** Connects to the content script(s) in the specified tab. The runtime.onConnect event is fired in each content script running in the specified tab for the current extension. */
   export const connect: vi.Mock<typeof chrome.tabs.connect>
   /**
@@ -9461,7 +9834,9 @@ export namespace Tabs {
    *
    * Parameter language: An ISO language code such as en or fr. For a complete list of languages supported by this method, see kLanguageInfoTable. The 2nd to 4th columns will be checked and the first non-NULL value will be returned except for Simplified Chinese for which zh-CN will be returned. For an unknown language, und will be returned.
    */
-  export const detectLanguage: vi.Mock<typeof chrome.tabs.detectLanguage>
+  export const detectLanguage: vi.Mock<
+    typeof chrome.tabs.detectLanguage
+  >
 
   /**
    * Zooms a specified tab.
@@ -9494,7 +9869,9 @@ export namespace Tabs {
    *
    * @param callback Optional. Called after the zoom settings have been changed.
    */
-  export const setZoomSettings: vi.Mock<typeof chrome.tabs.setZoomSettings>
+  export const setZoomSettings: vi.Mock<
+    typeof chrome.tabs.setZoomSettings
+  >
 
   /**
    * Gets the current zoom settings of a specified tab.
@@ -9505,7 +9882,9 @@ export namespace Tabs {
    *
    * Paramater zoomSettings: The tab's current zoom settings.
    */
-  export const getZoomSettings: vi.Mock<typeof chrome.tabs.getZoomSettings>
+  export const getZoomSettings: vi.Mock<
+    typeof chrome.tabs.getZoomSettings
+  >
 
   /**
    * Discards a tab from memory. Discarded tabs are still visible on the tab strip and are reloaded when activated.
@@ -9780,19 +10159,25 @@ export namespace TtsEngine {
   /** Called when the user makes a call to tts.speak() and one of the voices from this extension's manifest is the first to match the options object. */
   export const onSpeak: TtsEngineSpeakEvent
   /** Fired when a call is made to tts.stop and this extension may be in the middle of speaking. If an extension receives a call to onStop and speech is already stopped, it should do nothing (not raise an error). If speech is in the paused state, this should cancel the paused state. */
-  export const onStop: VitestChromeNamespace.events.Event<() => void>
+  export const onStop: VitestChromeNamespace.events.Event<
+    () => void
+  >
   /**
    * Optional: if an engine supports the pause event, it should pause the current utterance being spoken, if any, until it receives a resume event or stop event. Note that a stop event should also clear the paused state.
    *
    * @since Chrome 29.
    */
-  export const onPause: VitestChromeNamespace.events.Event<() => void>
+  export const onPause: VitestChromeNamespace.events.Event<
+    () => void
+  >
   /**
    * Optional: if an engine supports the pause event, it should also support the resume event, to continue speaking the current utterance, if any. Note that a stop event should also clear the paused state.
    *
    * @since Chrome 29.
    */
-  export const onResume: VitestChromeNamespace.events.Event<() => void>
+  export const onResume: VitestChromeNamespace.events.Event<
+    () => void
+  >
 }
 
 ////////////////////
@@ -9883,9 +10268,8 @@ export namespace Types {
   }
 
   export interface ChromeSettingChangedEvent
-    extends VitestChromeNamespace.events.Event<
-      DetailsCallback
-    > {}
+    extends VitestChromeNamespace.events
+      .Event<DetailsCallback> {}
 
   /** An interface that allows access to a Chrome browser setting. See accessibilityFeatures for an example. */
   export interface ChromeSetting {
@@ -9997,7 +10381,9 @@ export namespace VpnProvider {
    *
    * Parameter id: A unique ID for the created configuration, empty string on failure.
    */
-  export const createConfig: vi.Mock<typeof chrome.vpnProvider.createConfig>
+  export const createConfig: vi.Mock<
+    typeof chrome.vpnProvider.createConfig
+  >
   /**
    * Destroys a VPN configuration created by the extension.
    *
@@ -10005,7 +10391,9 @@ export namespace VpnProvider {
    *
    * @param callback Optional. Called when the configuration is destroyed or if there is an error.
    */
-  export const destroyConfig: vi.Mock<typeof chrome.vpnProvider.destroyConfig>
+  export const destroyConfig: vi.Mock<
+    typeof chrome.vpnProvider.destroyConfig
+  >
   /**
    * Sets the parameters for the VPN session. This should be called immediately after "connected" is received from the platform. This will succeed only when the VPN session is owned by the extension.
    *
@@ -10013,7 +10401,9 @@ export namespace VpnProvider {
    *
    * @param callback Called when the parameters are set or if there is an error.
    */
-  export const setParameters: vi.Mock<typeof chrome.vpnProvider.setParameters>
+  export const setParameters: vi.Mock<
+    typeof chrome.vpnProvider.setParameters
+  >
   /**
    * Sends an IP packet through the tunnel created for the VPN session. This will succeed only when the VPN session is owned by the extension.
    *
@@ -10021,7 +10411,9 @@ export namespace VpnProvider {
    *
    * @param callback Optional. Called when the packet is sent or if there is an error.
    */
-  export const sendPacket: vi.Mock<typeof chrome.vpnProvider.sendPacket>
+  export const sendPacket: vi.Mock<
+    typeof chrome.vpnProvider.sendPacket
+  >
   /**
    * Notifies the VPN session state to the platform. This will succeed only when the VPN session is owned by the extension.
    *
@@ -10033,7 +10425,9 @@ export namespace VpnProvider {
    *
    * @param callback Optional. Called when the notification is complete or if there is an error.
    */
-  export const notifyConnectionStateChanged: vi.Mock<typeof chrome.vpnProvider.notifyConnectionStateChanged>
+  export const notifyConnectionStateChanged: vi.Mock<
+    typeof chrome.vpnProvider.notifyConnectionStateChanged
+  >
 
   /** Triggered when a message is received from the platform for a VPN configuration owned by the extension. */
   export const onPlatformMessage: VpnPlatformMessageEvent
@@ -10084,7 +10478,9 @@ export namespace Wallpaper {
    *
    * Optional parameter thumbnail: The jpeg encoded wallpaper thumbnail. It is generated by resizing the wallpaper to 128x60.
    */
-  export const setWallpaper: vi.Mock<typeof chrome.wallpaper.setWallpaper>
+  export const setWallpaper: vi.Mock<
+    typeof chrome.wallpaper.setWallpaper
+  >
 }
 
 ////////////////////
@@ -10217,9 +10613,8 @@ export namespace WebNavigation {
   }
 
   export interface WebNavigationEvent<
-    T extends WebNavigationCallbackDetails
-  >
-    extends VitestChromeNamespace.events.Event<
+    T extends WebNavigationCallbackDetails,
+  > extends VitestChromeNamespace.events.Event<
       (details: T) => void
     > {
     addListener(
@@ -10229,34 +10624,22 @@ export namespace WebNavigation {
   }
 
   export interface WebNavigationFramedEvent
-    extends WebNavigationEvent<
-      WebNavigationFramedCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationFramedCallbackDetails> {}
 
   export interface WebNavigationFramedErrorEvent
-    extends WebNavigationEvent<
-      WebNavigationFramedErrorCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationFramedErrorCallbackDetails> {}
 
   export interface WebNavigationSourceEvent
-    extends WebNavigationEvent<
-      WebNavigationSourceCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationSourceCallbackDetails> {}
 
   export interface WebNavigationParentedEvent
-    extends WebNavigationEvent<
-      WebNavigationParentedCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationParentedCallbackDetails> {}
 
   export interface WebNavigationTransitionalEvent
-    extends WebNavigationEvent<
-      WebNavigationTransitionCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationTransitionCallbackDetails> {}
 
   export interface WebNavigationReplacementEvent
-    extends WebNavigationEvent<
-      WebNavigationReplacementCallbackDetails
-    > {}
+    extends WebNavigationEvent<WebNavigationReplacementCallbackDetails> {}
 
   /**
    * Retrieves information about the given frame. A frame refers to an <iframe> or a <frame> of a web page and is identified by a tab ID and a frame ID.
@@ -10267,7 +10650,9 @@ export namespace WebNavigation {
    *
    * Optional parameter details: Information about the requested frame, null if the specified frame ID and/or tab ID are invalid.
    */
-  export const getFrame: vi.Mock<typeof chrome.webNavigation.getFrame>
+  export const getFrame: vi.Mock<
+    typeof chrome.webNavigation.getFrame
+  >
   /**
    * Retrieves information about all frames of a given tab.
    *
@@ -10277,7 +10662,9 @@ export namespace WebNavigation {
    *
    * Optional parameter details: A list of frames in the given tab, null if the specified tab ID is invalid.
    */
-  export const getAllFrames: vi.Mock<typeof chrome.webNavigation.getAllFrames>
+  export const getAllFrames: vi.Mock<
+    typeof chrome.webNavigation.getAllFrames
+  >
 
   /** Fired when the reference fragment of a frame was updated. All future events for that frame will use the updated URL. */
   export const onReferenceFragmentUpdated: WebNavigationTransitionalEvent
@@ -10565,9 +10952,8 @@ export namespace WebRequest {
 
   // eslint-disable-next-line
   export interface _WebResponseHeadersEvent<
-    T extends WebResponseHeadersDetails
-  >
-    extends VitestChromeNamespace.events.Event<
+    T extends WebResponseHeadersDetails,
+  > extends VitestChromeNamespace.events.Event<
       (details: T) => void
     > {
     addListener(
@@ -10596,9 +10982,7 @@ export namespace WebRequest {
     extends _WebResponseHeadersEvent<WebResponseCacheDetails> {}
 
   export interface WebRedirectionResponseEvent
-    extends _WebResponseHeadersEvent<
-      WebRedirectionResponseDetails
-    > {}
+    extends _WebResponseHeadersEvent<WebRedirectionResponseDetails> {}
 
   export interface WebAuthenticationChallengeEvent
     extends VitestChromeNamespace.events.Event<
@@ -10628,7 +11012,9 @@ export namespace WebRequest {
   export const MAX_HANDLER_BEHAVIOR_CHANGED_CALLS_PER_10_MINUTES: number
 
   /** Needs to be called when the behavior of the webRequest handlers has changed to prevent incorrect handling due to caching. This function call is expensive. Don't call it often. */
-  export const handlerBehaviorChanged: vi.Mock<typeof chrome.webRequest.handlerBehaviorChanged>
+  export const handlerBehaviorChanged: vi.Mock<
+    typeof chrome.webRequest.handlerBehaviorChanged
+  >
 
   /** Fired when a request is about to occur. */
   export const onBeforeRequest: WebRequestBodyEvent
@@ -10935,7 +11321,9 @@ export namespace Windows {
   /**
    * Gets the current window.
    */
-  export const getCurrent: vi.Mock<typeof chrome.windows.getCurrent>
+  export const getCurrent: vi.Mock<
+    typeof chrome.windows.getCurrent
+  >
 
   /**
    * Creates (opens) a new browser with any optional sizing, position or default URL provided.
@@ -10958,7 +11346,9 @@ export namespace Windows {
   /**
    * Gets the window that was most recently focused — typically the window 'on top'.
    */
-  export const getLastFocused: vi.Mock<typeof chrome.windows.getLastFocused>
+  export const getLastFocused: vi.Mock<
+    typeof chrome.windows.getLastFocused
+  >
 
   /** Fired when a window is removed (closed). */
   export const onRemoved: WindowIdEvent

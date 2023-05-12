@@ -94,7 +94,7 @@ test('set: lastError correctly', () => {
 })
 
 test('set: lastError incorrectly', () => {
-  const lastError = ('error' as unknown) as Runtime.LastError
+  const lastError = 'error' as unknown as Runtime.LastError
 
   const setter = () => (chrome.runtime.lastError = lastError)
 

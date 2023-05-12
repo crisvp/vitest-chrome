@@ -36,7 +36,7 @@ type CoreEvent<C extends EventCallback> = {
 
 type Callable<
   C extends EventCallback,
-  R extends MonotypeEventSelector<C> | EventSelector<C>
+  R extends MonotypeEventSelector<C> | EventSelector<C>,
 > = {
   /**
    * Calls all listeners with a data argument.
@@ -61,7 +61,7 @@ type Callable<
 
 export type CallableEvent<
   C extends EventCallback,
-  R extends MonotypeEventSelector<C> | EventSelector<C>
+  R extends MonotypeEventSelector<C> | EventSelector<C>,
 > = CoreEvent<C> & Callable<C, R>
 
 export const createEvent = <C extends EventCallback>(
@@ -88,7 +88,7 @@ export const createEvent = <C extends EventCallback>(
  */
 export function createSetEvent<
   C extends EventCallback,
-  R extends EventSelector<C> | MonotypeEventSelector<C>
+  R extends EventSelector<C> | MonotypeEventSelector<C>,
 >(selector: R): CallableEvent<C, R> {
   const _cbs = new Set<C>()
 
@@ -155,7 +155,7 @@ export function createSetEvent<
 export function createMapEvent<
   C extends EventCallback,
   E extends EventSelector<C> | MonotypeEventSelector<C>,
-  O extends OptionsSelector
+  O extends OptionsSelector,
 >(eventSelector: E, optionsSelector?: O): CallableEvent<C, E> {
   const _cbs: Map<C, any[]> = new Map()
 

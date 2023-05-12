@@ -9,7 +9,7 @@ import { Storage } from './vitest-chrome'
  * @template T Type of namespace member
  */
 interface SchemaData<
-  T extends 'event' | 'function' | 'property'
+  T extends 'event' | 'function' | 'property',
 > {
   name: string
   type: T
