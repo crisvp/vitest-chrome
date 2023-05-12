@@ -4,3 +4,5 @@ node_modules/
 *.log
 types
 *.tgz
+.eslintrc-auto-import.json
+*.sw?
