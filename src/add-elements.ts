@@ -1,4 +1,4 @@
-import { Mock } from 'vitest'
+import { vi, Mock } from 'vitest'
 import { createEvent } from './create-event'
 import { Storage } from './vitest-chrome'
 
