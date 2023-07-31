@@ -3,6 +3,29 @@
 This is a quick & dirty hack to basically get jest-chrome working
 with vite. Use at someone else's risk.
 
+## Setup
+
+Setup is essentially the same as for jest.
+
+In your vitest config, add a setup file:
+
+```javascript
+test: {
+    setupFiles: ['tests/vitest/setup.ts']
+}
+```
+
+Then in your vitest setup file add:
+
+```javascript
+import * as chrome from 'vitest-chrome/src';
+
+Object.assign(global, chrome);
+```
+
+This should make `chrome` and its types available.
+
+
 ## Original README
 
 A complete mock of the Chrome API for Chrome extensions, for use
