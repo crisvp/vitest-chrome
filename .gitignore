@@ -1,5 +1,4 @@
 .vscode/
-lib/
 node_modules/
 *.log
 types
